@@ -1,0 +1,15 @@
+
+#!/bin/sh
+
+mount -t proc none /proc
+
+mount -t sysfs none /sysfs
+
+ifconfig eth0 10.0.0.99
+
+route add default gw 10.0.0.1
+
+httpd &
+
+/bin/sh
+

@@ -1,0 +1,3 @@
+tftpboot 00200000 kernel7.img
+tftpboot 00f00000 initramfs.uboot
+bootz 00200000 00f00000
